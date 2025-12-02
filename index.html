@@ -1,157 +1,3 @@
-Google Gemini
-Google 계정: 구글01전남 (jngg01@t.jne.go.kr) 
-
-기본 메뉴
-Gemini
-스튜디오 사이드바 전환하기
-EDUCATION
-
-새 채팅  
-Explore Gems  
-자유낙하 시뮬레이션 HTML 만들기 
-Stimson Hall, Yonsei University Identification 
-Gemini 앱 활동
-Gemini 앱 활동  
-Settings & help  
-
-Gemini와의 대화
-프롬프트 복사
-너는 유능한 웹 개발자야.
-중학생 과학 수업을 위한 [자유낙하] 시뮬레이션을 만들어줘.
-HTML 파일로 작성해.
-높이와 중력을 조절하는 슬라이더를 넣고,
-결과는 실시간 애니메이션으로 보여줘."
-듣기
-
-
-유능한 웹 개발자로서 중학생 과학 수업에 완벽하게 맞는 자유낙하 시뮬레이션 을 HTML 파일 하나로 만들어 드리겠습니다.
-이 시뮬레이션은 높이와 중력을 조절하는 슬라이더를 통해 학생들이 물리 법칙의 변화를 실시간 애니메이션으로 관찰할 수 있도록 설계되었습니다. Tailwind CSS를 사용하여 깔끔하고반응성이 좋은 디자인을 적용했습니다.
-다음은  free_fall_simulation.html  파일입니다.
-
-자유낙하 시뮬레이션
-12월 2일 오후 3:22   열기
-
-이 파일은 자유낙하 시뮬레이션 을 실행하는 데 필요한 모든 HTML, CSS(Tailwind), JavaScript 코드를 포함하고 있습니다.
-주요 기능 설명:
-
-1.  반응형 레이아웃:  캔버스는 컨테이너 크기에 맞춰 자동으로 조절되며, 전체 레이아웃은 모바일과 데스크톱 모두에서 보기 편합니다.
-2.  실시간 컨트롤:  '중력 가속도'와 '초기 높이' 슬라이더를 조작하면,  handleSliderChange  함수가 즉시 호출되어 새로운 값으로 시뮬레이션을 다시 시작합니다.
-3.  물리 공식 적용:  JavaScript에서 자유낙하 공식 를 사용하여 공의 픽셀 위치를 실시간으로 계산합니다.
-4.  정보 표시:  경과 시간, 현재 높이, 낙하 속도 등의 물리량이 실시간으로 화면 좌측 상단에 표시됩니다.
-
-대답이 마음에 들어요
-대답이 마음에 들지 않아요
-공유 및 내보내기
-복사
-옵션 더보기
-프롬프트 복사
-수정
-너는 유능한 웹 개발자야.
-초등학생 수업을 위한 시뮬레이션을 만들어줘.
-
-
-
-
-물건을 장바구니에 담고, 금액에 맞춰 지폐와 동전을 지불하는 연습을 하는 시뮬레이터를 만들고 싶어. HTML, CSS, JS가 포함된 단일 HTML 파일로 작성해.
-
-
-"사과, 우유 사진을 버튼으로 만들어줘."
-"돈이 부족하면 '돈이 더 필요해요'라고 음성(TTS)으로 말해줘."
-"500원짜리 동전 이미지를 아주 크게 보여줘."
-펼치기
-듣기
-
-
-알겠습니다! 초등학생들을 위한 장바구니 및 돈 계산 시뮬레이터  를 HTML, CSS, JavaScript가 모두 포함된 단일 HTML 파일로 만들어 드리겠습니다. 아이들이 쉽고 재미있게물건을 고르고 돈을 지불하는 연습을 할 수 있도록 디자인했습니다.
-특히 요청하신 기능들을 충실히 구현했습니다:
-
-•  사과, 우유 사진 버튼:  물건을 장바구니에 추가할 수 있는 버튼으로 만듭니다.
-•  돈 부족 시 음성 안내:  돈이 부족하면 "돈이 더 필요해요"라고 말해줍니다.
-•  500원 동전 확대:  500원 동전 이미지를 크게 보여주는 섹션을 추가합니다.
-
-다음은  shopping_simulator.html  파일입니다.
-
-shopping_simulator.html
-12월 2일 오후 3:26
-시뮬레이터 주요 특징:
-
-1.  물건 선택 (🍎🥛):
-
-•  "사과", "우유", "빵", "바나나" 버튼이 각각의 가격과 함께 표시됩니다.
-•  버튼을 클릭하면 해당 물건이 장바구니에 추가되고, 총 금액이 업데이트됩니다.
-•   https://via.placeholder.com 을 사용하여 아이콘 이미지를 임시로 표시했습니다. 실제 이미지로 교체할 수 있습니다.
-
-2.  장바구니 및 총 금액:
-
-•  선택된 물건 목록과 총 금액이 실시간으로 표시됩니다.
-•  "장바구니 비우기" 버튼으로 언제든지 초기화할 수 있습니다.
-
-3.  돈 지불 연습 (💰):
-
-•  다양한 지폐와 동전 이미지 버튼(10원, 50원, 100원, 500원, 1000원, 5000원, 10000원)이 제공됩니다.
-•  버튼을 클릭할 때마다 낸 돈이 합산되어 표시됩니다.
-•  낸 돈이 총 금액보다 많으면 거스름돈이 자동으로 계산되어 표시됩니다.
-•   https://via.placeholder.com 을 사용하여 지폐/동전 이미지를 임시로 표시했습니다. 실제 이미지로 교체할 수 있습니다.
-
-4.  "돈이 더 필요해요" 음성 안내:
-
-•   payButton 을 눌렀을 때 낸 돈이 총 금액보다 적으면 "돈이 더 필요해요"라는 메시지와 함께 음성으로 안내합니다.
-•  화폐 버튼을 클릭하여 돈을 낼 때,  paid 가  total 보다 적고  paid 가 0보다 크면 즉시 음성 안내를 합니다.
-
-5.  500원 동전 확대 (아주 크게!):
-
-•  페이지 오른쪽에 "돈 공부 해볼까요?" 섹션을 만들어 500원 동전 이미지를 아주 크게  표시했습니다.
-•  500원이 100원짜리 5개와 같다는 설명도 함께 제공하여 학습 효과를 높였습니다.
-
-6.  계산하기 및 초기화:
-
-•  "계산하기!" 버튼을 누르면 최종 계산 결과(총 금액, 낸 돈, 거스름돈)를 보여주고, 시뮬레이션을 초기화할 수 있습니다.
-•  "낸 돈 초기화" 버튼으로 지불한 금액만 초기화할 수 있습니다.
-
-
-사용 방법:
-
-1.  위 코드를 복사하여  shopping_simulator.html 이라는 이름의 파일로 저장합니다.
-2.  웹 브라우저(크롬, 엣지, 파이어폭스 등)로 이 파일을 엽니다.
-3.  물건 버튼을 눌러 장바구니에 담고, 돈 버튼을 눌러 지불 연습을 해보세요!
-
-참고:
-
-•   https://via.placeholder.com  으로 설정된 이미지들은 실제 사과, 우유, 빵, 바나나 및 지폐/동전 이미지 파일의 URL로 교체하시면 더 실감나는 시뮬레이션이 됩니다.(예:  images/apple.png  또는 실제 웹 이미지 주소)
-•  TTS(Text-to-Speech) 기능은 브라우저에 따라 지원 여부나 음성 품질이 다를 수 있습니다. 대부분의 최신 브라우저에서는 잘 작동합니다.
- 이미지
-원본 크기 이미지 다운로드
-
-대답이 마음에 들어요
-대답이 마음에 들지 않아요
-공유 및 내보내기
-복사
-옵션 더보기
-함께 작성하거나 만들어 봐요
-
-
-encrypted
-
-파일 업로드 메뉴 열기
-Canvas 선택 해제
-빠른 모드
-
-마이크 
-전라남도교육청 채팅은 Gemini 모델을 개선하는 데 사용되지 않습니다. Gemini는 인물 등에 관한 정보 제공 시 실수를 할 수 있으니 다시 한번 확인하세요.
-개인 정보 보호 및 Gemini 새 창에서 열기
-shopping_simulator.html
-변경사항이 저장됨
-이전 버전
-다음 버전
-콘솔 표시
-최근 변경사항 표시
-탭 선택
-코드
-미리보기
-Canvas 공유 및 내보내기
-패널 닫기
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -162,8 +8,308 @@ Canvas 공유 및 내보내기
     <style>
         /* 커스텀 스타일 */
         body {
-…        updateChange();
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0fdf4; /* Emerald 50 */
+        }
+        .item-button {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .item-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .item-button img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+        .currency-button {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.1s;
+        }
+        .currency-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .currency-button img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+        .big-coin {
+            width: 200px; /* 아주 크게 */
+            height: 200px;
+            border-radius: 50%;
+            background-color: #FFD700; /* 금색 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+        .big-coin img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 to-teal-100 min-h-screen p-6 flex flex-col items-center text-gray-800">
+
+    <header class="text-center mb-8">
+        <h1 class="text-5xl font-extrabold text-green-700 mb-4">🛒 신나는 장바구니 놀이!</h1>
+        <p class="text-xl text-green-600">물건을 담고 돈을 내 볼까요?</p>
+        <!-- 제작자 정보 추가 --><p class="text-sm text-gray-500 mt-2">제작자: 김아영</p>
+    </header>
+
+    <main class="w-full max-w-6xl bg-white p-8 rounded-3xl shadow-2xl grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- 1. 물건 선택 섹션 --><section class="col-span-1 lg:col-span-1 bg-green-50 p-6 rounded-2xl shadow-inner">
+            <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">🍎 어떤 물건을 살까요? 🥛</h2>
+            <div class="grid grid-cols-2 gap-4 justify-items-center">
+                <button class="item-button" data-item="apple" data-price="1000">
+                    <img src="https://via.placeholder.com/70x70/FF0000/FFFFFF?text=🍎" alt="사과">
+                    <span class="text-lg font-semibold text-gray-700">사과 (1000원)</span>
+                </button>
+                <button class="item-button" data-item="milk" data-price="2500">
+                    <img src="https://via.placeholder.com/70x70/ADD8E6/FFFFFF?text=🥛" alt="우유">
+                    <span class="text-lg font-semibold text-gray-700">우유 (2500원)</span>
+                </button>
+                <button class="item-button" data-item="bread" data-price="1500">
+                    <img src="https://via.placeholder.com/70x70/DEB887/FFFFFF?text=🍞" alt="빵">
+                    <span class="text-lg font-semibold text-gray-700">빵 (1500원)</span>
+                </button>
+                <button class="item-button" data-item="banana" data-price="3000">
+                    <img src="https://via.placeholder.com/70x70/FFE135/FFFFFF?text=🍌" alt="바나나">
+                    <span class="text-lg font-semibold text-gray-700">바나나 (3000원)</span>
+                </button>
+            </div>
+            <button id="reset-cart-button" class="mt-8 w-full py-3 bg-red-500 text-white text-xl font-bold rounded-xl hover:bg-red-600 transition-colors shadow-lg">
+                장바구니 비우기
+            </button>
+        </section>
+
+        <!-- 2. 장바구니 및 계산 섹션 --><section class="col-span-1 lg:col-span-1 bg-blue-50 p-6 rounded-2xl shadow-inner">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">📋 내 장바구니</h2>
+            <ul id="cart-list" class="space-y-3 mb-6 min-h-[150px] bg-white p-4 rounded-lg border border-blue-200">
+                <!-- 장바구니 아이템이 여기에 추가됩니다. --><li class="text-gray-500 text-center">장바구니가 비어 있어요.</li>
+            </ul>
+            <div class="flex justify-between items-center text-2xl font-bold text-blue-900 mb-6 p-3 bg-blue-100 rounded-lg">
+                <span>총 금액:</span>
+                <span id="total-price">0원</span>
+            </div>
+
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">💰 돈을 내 볼까요?</h2>
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-3 justify-items-center mb-6">
+                <button class="currency-button" data-value="10000">
+                    <img src="https://via.placeholder.com/70x70/8B4513/FFFFFF?text=1만원" alt="1만원 지폐">
+                </button>
+                <button class="currency-button" data-value="5000">
+                    <img src="https://via.placeholder.com/70x70/B8860B/FFFFFF?text=5천원" alt="5천원 지폐">
+                </button>
+                <button class="currency-button" data-value="1000">
+                    <img src="https://via.placeholder.com/70x70/006400/FFFFFF?text=1천원" alt="1천원 지폐">
+                </button>
+                <button class="currency-button" data-value="500">
+                    <img src="https://via.placeholder.com/70x70/FFD700/000000?text=500" alt="500원 동전">
+                </button>
+                <button class="currency-button" data-value="100">
+                    <img src="https://via.placeholder.com/70x70/C0C0C0/000000?text=100" alt="100원 동전">
+                </button>
+                <button class="currency-button" data-value="50">
+                    <img src="https://via.placeholder.com/70x70/D3D3D3/000000?text=50" alt="50원 동전">
+                </button>
+                <button class="currency-button" data-value="10">
+                    <img src="https://via.placeholder.com/70x70/CD7F32/000000?text=10" alt="10원 동전">
+                </button>
+            </div>
+
+            <div class="flex justify-between items-center text-2xl font-bold text-blue-900 mb-6 p-3 bg-blue-100 rounded-lg">
+                <span>낸 돈:</span>
+                <span id="paid-amount">0원</span>
+            </div>
+            <div class="flex justify-between items-center text-3xl font-extrabold text-blue-900 p-4 bg-yellow-200 rounded-lg shadow-md">
+                <span>거스름돈:</span>
+                <span id="change-amount">0원</span>
+            </div>
+            
+            <button id="pay-button" class="mt-8 w-full py-4 bg-teal-500 text-white text-2xl font-bold rounded-xl hover:bg-teal-600 transition-colors shadow-lg">
+                계산하기!
+            </button>
+            <button id="reset-payment-button" class="mt-4 w-full py-3 bg-gray-400 text-white text-xl font-bold rounded-xl hover:bg-gray-500 transition-colors shadow-lg">
+                낸 돈 초기화
+            </button>
+        </section>
+
+        <!-- 3. 학습 및 500원 동전 확대 섹션 --><section class="col-span-1 lg:col-span-1 bg-yellow-50 p-6 rounded-2xl shadow-inner flex flex-col items-center justify-between">
+            <div>
+                <h2 class="text-3xl font-bold text-yellow-800 mb-6 text-center">💡 돈 공부 해볼까요?</h2>
+                <div class="big-coin mb-8">
+                    <img src="https://via.placeholder.com/180x180/FFD700/000000?text=500" alt="큰 500원 동전">
+                </div>
+                <p class="text-xl text-center text-yellow-700 font-semibold mb-4">
+                    이 동전은 <span class="text-yellow-900 text-2xl font-extrabold">500원</span>이에요!
+                </p>
+                <p class="text-lg text-center text-yellow-600">
+                    100원짜리 동전 5개와 같아요.
+                </p>
+            </div>
+            <div class="mt-8 text-center text-lg text-gray-600">
+                <p>궁금한 점이 있으면 선생님께 물어보세요!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const cartList = document.getElementById('cart-list');
+        const totalPriceSpan = document.getElementById('total-price');
+        const paidAmountSpan = document.getElementById('paid-amount');
+        const changeAmountSpan = document.getElementById('change-amount');
+        const itemButtons = document.querySelectorAll('.item-button');
+        const currencyButtons = document.querySelectorAll('.currency-button');
+        const payButton = document.getElementById('pay-button');
+        const resetCartButton = document.getElementById('reset-cart-button');
+        const resetPaymentButton = document.getElementById('reset-payment-button');
+
+        let cart = []; // { name: '사과', price: 1000 }
+        let total = 0;
+        let paid = 0;
+
+        // 숫자를 원화 형식으로 포맷
+        function formatCurrency(amount) {
+            return amount.toLocaleString('ko-KR') + '원';
+        }
+
+        // 장바구니 업데이트 및 UI 갱신
+        function updateCart() {
+            cartList.innerHTML = ''; // 기존 목록 초기화
+            if (cart.length === 0) {
+                cartList.innerHTML = '<li class="text-gray-500 text-center">장바구니가 비어 있어요.</li>';
+            } else {
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'flex justify-between items-center text-lg text-gray-700 border-b border-blue-100 pb-2';
+                    li.innerHTML = `
+                        <span>${item.name}</span>
+                        <span>${formatCurrency(item.price)}</span>
+                    `;
+                    cartList.appendChild(li);
+                });
+            }
+            
+            total = cart.reduce((sum, item) => sum + item.price, 0);
+            totalPriceSpan.textContent = formatCurrency(total);
+            updateChange(); // 총 금액 변경 시 거스름돈도 업데이트
+        }
+
+        // 낸 돈 및 거스름돈 업데이트
+        function updateChange() {
+            paidAmountSpan.textContent = formatCurrency(paid);
+            const change = paid - total;
+            changeAmountSpan.textContent = formatCurrency(change > 0 ? change : 0);
+
+            // 돈이 부족하면 메시지 및 TTS
+            if (paid < total && paid > 0) { // paid가 0일 때는 말하지 않음
+                changeAmountSpan.classList.remove('bg-yellow-200');
+                changeAmountSpan.classList.add('bg-red-200', 'text-red-800');
+                // 돈 부족 TTS
+                speak('돈이 더 필요해요!');
+            } else if (paid >= total) {
+                changeAmountSpan.classList.remove('bg-red-200', 'text-red-800');
+                changeAmountSpan.classList.add('bg-yellow-200');
+            }
+        }
+
+        // TTS (Text-to-Speech) 함수
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'ko-KR'; // 한국어 설정
+                speechSynthesis.speak(utterance);
+            } else {
+                console.log("웹 브라우저가 음성 합성을 지원하지 않습니다.");
+            }
+        }
+
+        // 이벤트 리스너: 물건 버튼 클릭
+        itemButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const itemName = button.dataset.item === 'apple' ? '사과' :
+                                 button.dataset.item === 'milk' ? '우유' :
+                                 button.dataset.item === 'bread' ? '빵' :
+                                 button.dataset.item === 'banana' ? '바나나' : '알 수 없음';
+                const itemPrice = parseInt(button.dataset.price);
+                cart.push({ name: itemName, price: itemPrice });
+                updateCart();
+                speak(`${itemName} ${itemPrice}원`);
+            });
+        });
+
+        // 이벤트 리스너: 화폐 버튼 클릭
+        currencyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const value = parseInt(button.dataset.value);
+                paid += value;
+                updateChange();
+                speak(`${value}원`);
+            });
+        });
+
+        // 이벤트 리스너: 계산하기 버튼 클릭
+        payButton.addEventListener('click', () => {
+            if (paid >= total) {
+                const change = paid - total;
+                speak(`계산 완료! ${change}원 거스름돈이에요. 다음에 또 오세요!`);
+                alert(`계산 완료! 총 ${formatCurrency(total)}, 낸 돈 ${formatCurrency(paid)}, 거스름돈 ${formatCurrency(change)}`);
+                // 시뮬레이션 초기화
+                cart = [];
+                total = 0;
+                paid = 0;
+                updateCart();
+                updateChange();
+            } else {
+                speak('돈이 부족해요! 돈을 더 내주세요!');
+                alert('돈이 부족해요! 돈을 더 내주세요.');
+            }
+        });
+
+        // 이벤트 리스너: 장바구니 비우기 버튼 클릭
+        resetCartButton.addEventListener('click', () => {
+            cart = [];
+            total = 0;
+            updateCart();
+            updateChange(); // 장바구니가 비워졌으니 거스름돈도 다시 계산
+            speak('장바구니를 비웠어요.');
+        });
+
+        // 이벤트 리스너: 낸 돈 초기화 버튼 클릭
+        resetPaymentButton.addEventListener('click', () => {
+            paid = 0;
+            updateChange();
+            speak('낸 돈을 초기화했어요.');
+        });
+
+        // 초기화
+        updateCart();
+        updateChange();
     </script>
 </body>
 </html>
-
